@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/> 
+        <link rel="stylesheet" href="css/phoneBook.css"/> 
+        
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script> 
+    </head>
+
+    <body>
+        
+        <!-- Start search task -->
+        
+        <div class="container my-4 text-center">
+            <input id="searchInp" class="form-control py-2" placeholder="Search .."/>
+            
+            <div id="searchRow" class="row my-5"></div>
+        </div>
+        
+        <!-- End search task -->
+  
+        <div class="container py-4">
+            
+            <!-- Start Validation task -->
+            <div id="alertContainer" class="alert alert-danger"></div>
+            <!-- End validation task -->
+            
+            
+            <!-- Start Inputs task -->
+            <div class="form-group">
+                <label>productName :</label>
+                <input id="productName" class="form-control">
+            </div>
+            
+            <div class="form-group">
+                <label>productPrice :</label>
+                <input id="productPrice" class="form-control">
+            </div>
+            
+            <div class="form-group">
+                <label>productCompany :</label>
+                <input id="productCompany" class="form-control">
+            </div>
+            
+            <div class="form-group">
+                <label>productDes :</label>
+                <textarea id="productDes" class="form-control"></textarea>
+            </div>
+            <!-- End Inputs task -->
+            
+            <button id="myBtn" class="btn btn-info float-right">Add Product</button>
+            
+            <div class="clearfix"></div>
+        </div>
+        
+        
+        <!-- Start Grid for display products task -->
+        
+        <div class="container text-center py-5" >
+            <h2 class="mb-5 font-weight-bold"> Our Products</h2>
+            <div class="row" id="productRow"></div>
+        </div>
+        
+        <!-- End Grid for display products task -->
+
+        
+        
+        <script src="phoneBook.js"></script>
+        
+    </body>
+</html>
